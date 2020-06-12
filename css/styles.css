@@ -1,0 +1,232 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-nav-color: #212121;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --focus-color: #2196f3;
+}
+
+/* General styles */
+
+body {
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  color: var(--title-nav-color);
+}
+
+p {
+  color: var(--primary-text-color);
+}
+
+/* Header styles */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-nav-color);
+}
+
+.logo-part1 {
+  color: var(--focus-color);
+}
+
+.main-navigation .navigation-item {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-nav-color);
+}
+
+.contact-links a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.navigation-item:hover,
+.contact-link-item:hover,
+.hover:hover,
+.navigation-item:focus,
+.contact-link-item:focus,
+.hover:focus {
+  color: var(--focus-color);
+}
+
+/* Кнопка героя */
+
+.order-service-link {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--focus-color);
+  color: var(--primary-white-color);
+}
+
+.order-service h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  /* Сделала фон только для видимости текста */
+  background-color: var(--focus-color);
+}
+
+/* Our advantages section */
+
+.advantages h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Scope of business section */
+
+.scope-of-business h2,
+.our-team h2,
+.our-clients h2 {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.title-white {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* Our team section */
+
+.our-team h3,
+.our-team p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.our-team p {
+  font-weight: 400;
+}
+
+/* Footer */
+
+.footer {
+  background: #2f303a;
+}
+
+.footer-logo {
+  font-size: 22px;
+  line-height: 1.18;
+  color: var(--primary-white-color);
+}
+
+.adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+}
+
+.adress span {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Portfolio specific page styles */
+
+/* Buttons */
+
+.button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-nav-color);
+  background-color: #f5f4fa;
+}
+
+/* List of the projects */
+
+.projects-list h2 {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type.hover {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Temporary styl of project description for visibility */
+
+.project-description {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  background-color: var(--focus-color);
+}
