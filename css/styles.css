@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -36,8 +34,7 @@ a {
   margin: 0;
 }
 
-h2,
-h3 {
+h2, h3 {
   display: block;
   margin: 0;
   font-weight: 700;
@@ -104,7 +101,7 @@ p {
   margin-left: auto;
 }
 
-.contact-links .item + .item {
+.contact-links .item+.item {
   margin-left: 30px;
 }
 
@@ -118,12 +115,7 @@ p {
   color: var(--primary-text-color);
 }
 
-.navigation-item:hover,
-.contact-link-item:hover,
-.hover:hover,
-.navigation-item:focus,
-.contact-link-item:focus,
-.hover:focus {
+.navigation-item:hover, .contact-link-item:hover, .hover:hover, .navigation-item:focus, .contact-link-item:focus, .hover:focus {
   color: var(--focus-color);
 }
 
@@ -162,11 +154,7 @@ p {
 
 /* Our advantages section */
 
-.advantages,
-.scope-of-business,
-.our-team,
-.our-clients,
-.footer {
+.advantages, .scope-of-business, .our-team, .our-clients, .footer {
   margin-top: 94px;
 }
 
@@ -199,9 +187,7 @@ p {
 
 /* Scope of business section */
 
-.scope-of-business h2,
-.our-team h2,
-.our-clients h2 {
+.scope-of-business h2, .our-team h2, .our-clients h2 {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -252,8 +238,7 @@ p {
   padding-bottom: 35px;
   margin-right: 30px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-member:nth-child(4n) {
@@ -274,8 +259,7 @@ p {
   margin-bottom: 16px;
 }
 
-.our-team h3,
-.our-team p {
+.our-team h3, .our-team p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -310,6 +294,7 @@ p {
   display: flex;
   justify-content: center;
 }
+
 .clients-list .item {
   margin-right: 30px;
 }
@@ -317,6 +302,7 @@ p {
 .clients-list .item:nth-child(6n) {
   margin-right: 0px;
 }
+
 /* Footer */
 
 .footer {
@@ -328,7 +314,19 @@ p {
   padding-bottom: 21px;
 }
 
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contacts {
+  margin-right: 64px;
+  padding-right: 15px;
+}
+
 .footer-logo {
+  margin-bottom: 9px;
   font-size: 22px;
   line-height: 1.18;
   color: var(--primary-white-color);
@@ -337,7 +335,7 @@ p {
 .adress {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background: none;
@@ -350,7 +348,21 @@ p {
   color: var(--primary-white-color);
 }
 
+.social-media-list {
+  display: flex;
+}
+
+.social-media-links .title-white, .subscribe .title-white {
+  margin-bottom: 20px;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
 .copyright {
+  display: block;
+  text-align: center;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -361,7 +373,14 @@ p {
 
 /* Buttons */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+}
+
 .button {
+  padding: 6px 22px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -369,9 +388,26 @@ p {
   letter-spacing: 0.03em;
   color: var(--title-nav-color);
   background-color: #f5f4fa;
+  border-radius: 4px;
+  border-style: var(--primary-white-color);
+}
+
+.button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--focus-color);
+}
+
+.filter-list li+li {
+  margin-left: 8px;
 }
 
 /* List of the projects */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
 
 .projects-list h2 {
   font-size: 18px;
@@ -379,7 +415,31 @@ p {
   letter-spacing: 0.06em;
 }
 
-.project-type.hover {
+.project-item {
+  width: 370px;
+}
+
+.project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #EEEEEE;
+}
+
+.project-text {
+  margin: 20px 24px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.project-type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
