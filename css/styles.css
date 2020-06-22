@@ -410,6 +410,8 @@ p {
 }
 
 .projects-list h2 {
+  padding-left: 24px;
+  padding-right: 24px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -427,10 +429,6 @@ p {
   border-color: #EEEEEE;
 }
 
-.project-text {
-  margin: 20px 24px;
-}
-
 .project-item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -446,9 +444,15 @@ p {
   color: var(--primary-text-color);
 }
 
+.project-type {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 /* Temporary styl of project description for visibility */
 
 .project-description {
+  padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
